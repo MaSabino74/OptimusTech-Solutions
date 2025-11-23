@@ -1,0 +1,227 @@
+/* ===================================================================
+   📱 RESPONSIVE.CSS – Design Mobile First para OptimusTech
+   Tamanhos:
+   - até 960px  → tablet / medium screens
+   - até 768px  → mobile grande
+   - até 480px  → mobile pequeno
+=================================================================== */
+
+
+
+/* ===============================================================
+   1) MENU HAMBÚRGUER
+================================================================ */
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #333;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    transition: 0.35s ease;
+    z-index: 1000;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.btn-mobile {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #999;
+    background: #f1f1f1;
+}
+
+.btn-mobile.destaque {
+    background: #8E2424;
+    color: #fff;
+    border: none;
+}
+
+/* Sidebar abre */
+#menu-toggle:checked ~ .sidebar {
+    left: 0;
+}
+
+/* Animação do hambúrguer virar X */
+#menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+#menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+#menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mostrar botão hambúrguer em telas pequenas */
+@media (max-width: 960px) {
+    nav {
+        justify-content: space-between;
+        padding: 1.2rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu,
+    .buttons {
+        display: none;
+    }
+}
+
+
+
+
+/* ===============================================================
+   2) HERO / APRESENTAÇÃO
+================================================================ */
+
+@media (max-width: 768px) {
+
+    .apresentacao__titulo__nome {
+        font-size: 32px;
+    }
+
+    .cabeçalho__titulo__texto {
+        font-size: 1.8rem;
+        padding: 1em 1rem;
+    }
+
+    .cabeçalho__titulo__descrição {
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* ===============================================================
+   3) MÉTRICAS – duas colunas
+================================================================ */
+
+@media (max-width: 960px) {
+    .metricas {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .metricas__dados {
+        width: 45%;   /* duas por linha */
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .metricas__dados {
+        width: 100%; /* uma por linha no mobile pequeno */
+    }
+}
+
+
+
+/* ===============================================================
+   4) VAGAS – imagem full width e caixas responsivas
+================================================================ */
+
+@media (max-width: 960px) {
+    .vagas__imagem {
+        width: 90%;
+    }
+
+    .vagas__lista {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .vagas__titulo__info {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* ===============================================================
+   5) DEPOIMENTO
+================================================================ */
+
+@media (max-width: 960px) {
+    .depoimento {
+        width: 90%;
+        padding: 3rem 1rem;
+    }
+
+    .depoimento__titulo__descrição {
+        font-size: 28px;
+    }
+
+    .depoimento__colaborador__nome {
+        font-size: 22px;
+    }
+}
+
+
+
+/* ===============================================================
+   6) FOOTER / FORMULÁRIO
+================================================================ */
+
+@media (max-width: 960px) {
+
+    .formulario__email {
+        width: 70%;
+    }
+
+    .formulario__titulo {
+        font-size: 26px;
+    }
+
+    .formulario__texto {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario__email {
+        width: 90%;
+    }
+
+    .formulario__botão {
+        margin-top: 1rem;
+        width: 90%;
+    }
+}

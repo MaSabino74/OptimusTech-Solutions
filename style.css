@@ -1,0 +1,289 @@
+:root {
+    --text-color: #667085;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu a {
+    color: var(--text-color);
+    text-decoration:none;
+    margin-right: 2rem;
+}
+.menu__link {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+button#signUp {
+    background-color: #8E2424;
+    color: #FFF;
+    border-radius:0.5rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.apresentacao {
+    text-align: center;
+}
+
+.apresentacao__titulo {
+    padding: 5rem 0;
+}
+
+.apresentacao__titulo__nome {
+    font-size: 60px;
+    font-weight: 600;
+    color: #8E2424;
+}
+
+.cabeçalho__titulo__texto {
+    color: #212121;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1.2em 0;
+}
+
+.cabeçalho__titulo__descrição {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: gray;
+    margin: auto;
+    width: 50%;
+}
+.metricas {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.metricas__dados{
+    text-align: left;
+    width: 18%;     
+}
+
+.metricas__dados__numeros{
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: #8E2424;
+}
+.metricas__dados__info{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #212121
+}
+.metricas__dados__texto{
+    font-weight: 400;
+    color:  gray;
+
+}
+.vagas{
+    padding: 6rem 0;
+    text-align: center;
+}
+.vagas__titulo{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color:#8E242483;
+    background: lightcoral;
+    display: inline;
+    border-radius: 1rem;
+    padding: 0.4rem 0.75rem;
+}
+.vagas__titulo__info{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #212121;
+    margin: 1.2em 0;
+}
+.vagas__titulo__texto{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: gray;
+}
+.vagas__imagem{
+    margin: 4em 0;
+    width: 50%;
+}
+
+.vagas__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 40%;
+    text-align: left;
+    margin: auto;
+    list-style-type: none;
+}
+
+.lista__titulo{
+    font-weight: 500;
+    color:#212121;
+}
+.lista__titulo{
+    font-size: 20px;
+    gap: 2em;
+}
+.vagas__lista__item{
+    padding: 1.5em;
+    border: 1px solid whitesmoke;
+    border-radius: 16px;
+    
+}
+.lista__item__titulo{
+    font-size: 18px;
+    padding-bottom: 1.5em;
+    align-items: start;
+    
+}
+
+.lista__item__texto{
+color: gray;
+font-weight: 500;
+}
+
+.depoimento {
+    background:#FFFAF0;
+    padding: 5em;
+    text-align: center;
+    margin: auto;
+    border-radius: 16px;
+    width: 70%;
+}
+
+.depoimento__titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3em;
+}
+
+.depoimento__titulo__texto{
+    font-size: 14px;
+    font-weight: 600;
+    color: #8B0000;   
+}
+
+.depoimento__titulo__descrição{
+    
+    font-size: 36px;
+    font-weight: 500;
+    color: #212121
+}
+.depoimento__colaborador__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 50%;
+}
+.depoimento__colaborador__nome{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #212121;
+}
+.rodapé{
+    background: gainsboro;
+    padding: 4em 0;
+    text-align: center;
+    margin-top: 6em;
+    
+}
+.rodapé__formulario{
+    margin-bottom: 1.5em;
+    
+}
+.formulario__titulo{
+    font-size:36px;
+    font-weight: 600;
+    color: #212121;
+}
+.formulario__texto{
+    font-size: 20px;
+    font-weight: 400;
+    color: #212121;
+    padding: 1em 0;
+}
+.formulario__email{
+    width: 15%;
+    padding: 0.5em;
+    border-radius: 8px ;
+    border: 1px solid ghostwhite;
+}
+
+.formulario__email::placeholder{
+    font-size:16px;
+    font-weight: 400;
+    font-family: var(--fonte-padrão);
+    color: #DCDCDC;
+}
+.formulario__botão{
+    background-color: #8B0000;
+    padding: 0.7em 1.2em;
+    color: #DCDCDC;
+    border-radius: 8px ;
+    border: none;
+}
+.rodapé__copy{
+    font-weight: 400;
+    color: #212121;
+    padding: 0.5em 0;
+}
+.rodapé__copy p{
+    font-size: 10px;
+    text-decoration-line: none;
+
+}
+.social-list {
+    display: flex; 
+    justify-content: center; 
+    padding: 20px 0;}
+
+/* --- Estilo Base dos Ícones --- */
+.social-list a i {
+    font-size: 36px; 
+    color: #555; 
+    cursor: pointer; 
+    transition: all 0.3s ease;}
+
+/* --- Efeitos Hover Específicos por Rede Social --- */
+
+/* LinkedIn */
+.fa-square-linkedin:hover {
+    color: #0A66C2; /* Cor oficial do LinkedIn (Azul) */
+    transform: translateY(-3px); /* Pequeno movimento para cima */
+}
+
+/* GitHub */
+.fa-square-github:hover {
+    color: #333; /* Cor oficial do GitHub (Preto/Cinza Escuro) */
+    transform: translateY(-3px);
+}
+
+/* E-mail */
+.fa-envelope:hover {
+    color: #D93025; /* Um vermelho do Gmail/Google para representar */
+    transform: translateY(-3px);
+}
+
+/* WhatsApp */
+.fa-square-whatsapp:hover {
+    color: #25D366; /* Cor oficial do WhatsApp (Verde) */
+    transform: translateY(-3px);
+}
